@@ -12,8 +12,9 @@ startButton.addEventListener('click', playMusic)
 //declare variables
 let alphabet = ["a", "b", "c", "d", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 let guess ;
-let storedGuesses = []; 
-let lives ;
+let storedGuesses = "A, B, C";
+let storedWins = 0;
+let lives = 10;
 // let clueList = [
 //     `Who said "You know nothing, Jon Snow"?`,//Ygritte
 //     `Who said "A lion does not concern himself with the opinion of sheep"?`,//Tywin Lannister
@@ -82,3 +83,6 @@ const showUnderscores = () => {
 //function calls
 startButton.addEventListener('click', showClue);
 startButton.addEventListener('click', showUnderscores);
+document.querySelector('#lives-count-js').append(lives);
+document.querySelector('#lives-lost-count-js').append(storedGuesses);
+document.querySelector('#wins-count-js').append(storedWins);
