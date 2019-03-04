@@ -1,1 +1,1 @@
-# hangman-game
+# word-guess-game
