@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>G.O.T Hangman</title>
+    <link rel="icon" type="image/icon" href="./assets/images/got-logo.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="title-box">
+        <image src="./assets/images/game-of-thrones-title.png" alt="GOT title" id="game-logo" class="center" style="width: 400px"></image>
+        <h1>HANGMAN</h1>
+    </div>
+    
+    <div class="game-box">
+        <div class="start-game-box">
+        <h2>"When you play a game of thrones, you WIN or you DIE"</h2>
+        <button id="start-button">START</button>
+        </div>
+
+        <div class="hangman-box">
+            <div id="clue"></div>
+            <div id="word-box"></div>
+        </div>
+
+        <div class="alphabet-box">
+            <button>A</button>
+            <button>B</button>
+            <button>C</button>
+            <button>D</button>
+            <button>E</button>
+            <button>F</button>
+            <button>G</button>
+            <button>H</button>
+            <button>I</button>
+            <button>J</button>
+            <button>K</button>
+            <button>L</button>
+            <button>M</button>
+            <button>N</button>
+            <button>O</button>
+            <button>P</button>
+            <button>Q</button>
+            <button>R</button>
+            <button>S</button>
+            <button>T</button>
+            <button>U</button>
+            <button>V</button>
+            <button>W</button>
+            <button>X</button>
+            <button>Y</button>
+            <button>Z</button>
+        </div>
+
+        <div class="score-section">
+            <div id="wins-count">
+                <p>Wars Won</p>
+                <div id="wins-count-js"></div>
+            </div>
+        
+            <div id="lives-count">
+                <p>Lives Left</p>
+                <div id="lives-count-js"></div>
+            </div>
+              
+            <div id="lives-lost-count">
+                <p>Lives Lost</p>
+                <div id="lives-lost-count-js"></div>
+            </div>
+              
+        </div>
+    </div>
+
+<audio id="theme-song">
+    <source src="./assets/audio/GOT-theme-song.mp3" type="audio/mp3">
+</audio>
+
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+</body>
+</html>
